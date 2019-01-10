@@ -12,6 +12,12 @@
 		0376689621A072740004C779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0376689421A072740004C779 /* Main.storyboard */; };
 		0376689821A072780004C779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0376689721A072780004C779 /* Assets.xcassets */; };
 		0376689B21A072780004C779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0376689921A072780004C779 /* LaunchScreen.storyboard */; };
+		037668A721A073760004C779 /* AllMenu.json in Resources */ = {isa = PBXBuildFile; fileRef = 037668A621A073760004C779 /* AllMenu.json */; };
+		037668A921A073C60004C779 /* SubCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037668A821A073C60004C779 /* SubCategory.swift */; };
+		037668AB21A07AFF0004C779 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037668AA21A07AFF0004C779 /* Category.swift */; };
+		037668B021A07D090004C779 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037668AF21A07D090004C779 /* Service.swift */; };
+		037668B221A08E060004C779 /* SubCategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037668B121A08E060004C779 /* SubCategoryTVC.swift */; };
+		4E17C8AAD907B67E428E9FB4 /* Pods_Mantra_Task.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08BECC9561B736F8C2D5E681 /* Pods_Mantra_Task.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,14 @@
 		0376689721A072780004C779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0376689A21A072780004C779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0376689C21A072780004C779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		037668A621A073760004C779 /* AllMenu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AllMenu.json; sourceTree = "<group>"; };
+		037668A821A073C60004C779 /* SubCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategory.swift; sourceTree = "<group>"; };
+		037668AA21A07AFF0004C779 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		037668AF21A07D090004C779 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		037668B121A08E060004C779 /* SubCategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryTVC.swift; sourceTree = "<group>"; };
+		08BECC9561B736F8C2D5E681 /* Pods_Mantra_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mantra_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		425BCC885F6ED940752C74D1 /* Pods-Mantra Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mantra Task.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mantra Task/Pods-Mantra Task.debug.xcconfig"; sourceTree = "<group>"; };
+		FC6E7E0A75CE2E256AA5AD98 /* Pods-Mantra Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mantra Task.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mantra Task/Pods-Mantra Task.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E17C8AAD907B67E428E9FB4 /* Pods_Mantra_Task.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				0376688F21A072740004C779 /* Mantra Task */,
 				0376688E21A072740004C779 /* Products */,
+				F1F863048551ACF0B4CC4DCF /* Pods */,
+				8FF514353A9BAABCA426A6BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +72,67 @@
 			isa = PBXGroup;
 			children = (
 				0376689021A072740004C779 /* AppDelegate.swift */,
-				0376689221A072740004C779 /* ViewController.swift */,
+				037668A521A073570004C779 /* resources */,
+				037668AE21A07CE70004C779 /* services */,
+				037668A321A073480004C779 /* models */,
+				037668A221A073320004C779 /* views */,
 				0376689421A072740004C779 /* Main.storyboard */,
 				0376689721A072780004C779 /* Assets.xcassets */,
 				0376689921A072780004C779 /* LaunchScreen.storyboard */,
 				0376689C21A072780004C779 /* Info.plist */,
 			);
 			path = "Mantra Task";
+			sourceTree = "<group>";
+		};
+		037668A221A073320004C779 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				0376689221A072740004C779 /* ViewController.swift */,
+				037668B121A08E060004C779 /* SubCategoryTVC.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		037668A321A073480004C779 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				037668A821A073C60004C779 /* SubCategory.swift */,
+				037668AA21A07AFF0004C779 /* Category.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		037668A521A073570004C779 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				037668A621A073760004C779 /* AllMenu.json */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		037668AE21A07CE70004C779 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				037668AF21A07D090004C779 /* Service.swift */,
+			);
+			path = services;
+			sourceTree = "<group>";
+		};
+		8FF514353A9BAABCA426A6BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08BECC9561B736F8C2D5E681 /* Pods_Mantra_Task.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1F863048551ACF0B4CC4DCF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				425BCC885F6ED940752C74D1 /* Pods-Mantra Task.debug.xcconfig */,
+				FC6E7E0A75CE2E256AA5AD98 /* Pods-Mantra Task.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0376689F21A072780004C779 /* Build configuration list for PBXNativeTarget "Mantra Task" */;
 			buildPhases = (
+				FF21681F6F6293443ADE183E /* [CP] Check Pods Manifest.lock */,
 				0376688921A072740004C779 /* Sources */,
 				0376688A21A072740004C779 /* Frameworks */,
 				0376688B21A072740004C779 /* Resources */,
+				3ACDC156A48A74C41C317F22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,11 +197,59 @@
 			files = (
 				0376689B21A072780004C779 /* LaunchScreen.storyboard in Resources */,
 				0376689821A072780004C779 /* Assets.xcassets in Resources */,
+				037668A721A073760004C779 /* AllMenu.json in Resources */,
 				0376689621A072740004C779 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ACDC156A48A74C41C317F22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Mantra Task/Pods-Mantra Task-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mantra Task/Pods-Mantra Task-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF21681F6F6293443ADE183E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mantra Task-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0376688921A072740004C779 /* Sources */ = {
@@ -136,7 +257,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0376689321A072740004C779 /* ViewController.swift in Sources */,
+				037668A921A073C60004C779 /* SubCategory.swift in Sources */,
 				0376689121A072740004C779 /* AppDelegate.swift in Sources */,
+				037668B221A08E060004C779 /* SubCategoryTVC.swift in Sources */,
+				037668AB21A07AFF0004C779 /* Category.swift in Sources */,
+				037668B021A07D090004C779 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +405,7 @@
 		};
 		037668A021A072780004C779 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 425BCC885F6ED940752C74D1 /* Pods-Mantra Task.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -288,7 +414,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Mantra-Task";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kishore.mantraTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -297,6 +423,7 @@
 		};
 		037668A121A072780004C779 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC6E7E0A75CE2E256AA5AD98 /* Pods-Mantra Task.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,7 +432,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Mantra-Task";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kishore.mantraTask;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
